@@ -8,17 +8,19 @@ export class SearchService {
   
   
   private userName!:string;
-  private secret!:'';
-  private id!:'86242350';
+  private clientSecret!:'325355b7b6b330c465584f935d847237da76b4e3 ';
+  private clientId!:'28efe4e40d13f467ff1d ';
+  
   constructor(private http:HttpClient) { 
      
 
-  console.log('It Generates successfully');
+  console.log();
 
   this.userName='devseme';
   }
   getUserInfo(){
-    return this.http.get("");
+    return this.http.get<any[]>("${this.baseUrl}${this.userName)}",{ }).toPromise()
+
   }
 
   
