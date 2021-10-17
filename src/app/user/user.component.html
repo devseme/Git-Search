@@ -1,1 +1,8 @@
-<p>user works!</p>
+<form>
+    <input type="text"  id="userName" [(ngModel)]="userName" name="userName" (keyup)="searchProfile()" placeholder="Your username..." required>
+    
+</form>
+  
+      <p>MyUsername:{{myProfile.login}}</p>
+      <p>My name:{{myProfile.name}}</p>
+      <p>My Followers:{{myProfile.followers}}</p>
