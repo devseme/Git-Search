@@ -18,3 +18,10 @@ input{
     padding:50px;
     
 }
+h3,p{
+    color: white;
+}
+.repositories{
+    background-color: #464062;
+    margin: 10px;
+}

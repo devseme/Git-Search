@@ -5,13 +5,13 @@
            <input type="text"  id="userName" [(ngModel)]="userName" name="userName" (keyup)="getUserRepositories()" placeholder="Your Username..." required>
     
 </form>
-<div class="repositories"></div>
+<div class="repositories">
 <div class="card mt-5 bg-secondary" *ngFor='let repo of repositories'>
  
     <h3 class="card-header ">{{repo.name | uppercase}}</h3>
     <div class="card-body"> 
     <p class="card-text">{{repo.description}}</p>
-    <a href="#" class="btn btn-primary">Go to Repository</a>
+    <a href={{repo.html_url}} class="btn btn-primary">Go to Repository</a>
 </div>
     </div>
 
