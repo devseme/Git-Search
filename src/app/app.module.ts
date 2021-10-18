@@ -11,6 +11,7 @@ import { RepositoryComponent } from './repository/repository.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { DateCountPipe } from './date-count.pipe';
+import { UppercasePipe } from './uppercase.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DateCountPipe } from './date-count.pipe';
     RepositoryComponent,
     NavbarComponent,
     HomeComponent,
-    DateCountPipe
+    DateCountPipe,
+    UppercasePipe
   ],
   imports: [
     BrowserModule,
