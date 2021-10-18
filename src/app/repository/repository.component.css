@@ -1,0 +1,20 @@
+label {
+    text-align: center;
+    line-height: 150%;
+    font-size: 20px;
+    color: black;
+}
+input{
+    width:80%;
+    height:40px;
+    border-style: none;
+    border-radius: 12px;
+}
+.form-class{
+    width: 100%;
+    background-color: #464062;
+    align-items: center;
+    color:#EEC390;
+    padding:50px;
+    
+}

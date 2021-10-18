@@ -1,13 +1,18 @@
-<div class="form-class">
-    <form>
-        
-    <span appColor>Enter your userNname </span><input type="text"  id="userName" [(ngModel)]="userName" name="userName" (keyup)="getUserRepositories()" placeholder="Your Username..." required>
+<h1> Github Users` Repositories Data</h1><br>
+    <form class="form-class">
+        <label for="userName"> <span appColor>Enter and Search your Github Username </span></label>
+        <br>
+           <input type="text"  id="userName" [(ngModel)]="userName" name="userName" (keyup)="getUserRepositories()" placeholder="Your Username..." required>
     
 </form>
-
-<div *ngFor='let repo of repositories'>
+<div class="repositories"></div>
+<div class="card mt-5 bg-secondary" *ngFor='let repo of repositories'>
  
-    <h2>{{repo.name | uppercase}}</h2> 
-    <p>{{repo.description}}</p>
+    <h3 class="card-header ">{{repo.name | uppercase}}</h3>
+    <div class="card-body"> 
+    <p class="card-text">{{repo.description}}</p>
+    <a href="#" class="btn btn-primary">Go to Repository</a>
+</div>
     </div>
+
    
