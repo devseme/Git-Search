@@ -1,5 +1,5 @@
 <form>
-    <input type="text"  id="userName" [(ngModel)]="userName" name="userName" (keyup)="searchProfile()" placeholder="Your username..." required>
+    <span appColor>Enter your Username: <input type="text"  id="userName" [(ngModel)]="userName" name="userName" (keyup)="searchProfile()" placeholder="Your username..." required></span>
     
 </form>
   
@@ -9,7 +9,7 @@
       <p>My Followers:{{myProfile.followers}}</p>
 
       <div *ngFor='let repo of repos'>
-
+ 
          <h2>{{repo.name}}</h2> 
          <p>{{repo.description}}</p>
          </div>
