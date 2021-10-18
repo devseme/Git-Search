@@ -10,6 +10,7 @@ import { ColorDirective } from './color.directive';
 import { RepositoryComponent } from './repository/repository.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     ColorDirective,
     RepositoryComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
