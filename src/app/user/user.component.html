@@ -4,5 +4,12 @@
 </form>
   
       <p>MyUsername:{{myProfile.login}}</p>
+      <img [src]='myProfile.avatar_url'  class="img-responsive profileimage">
       <p>My name:{{myProfile.name}}</p>
       <p>My Followers:{{myProfile.followers}}</p>
+
+      <div *ngFor='let repo of repos'>
+
+         <h2>{{repo.name}}</h2> 
+         <p>{{repo.description}}</p>
+         </div>

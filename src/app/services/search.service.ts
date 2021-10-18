@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class SearchService {
-  
+   private repoName!:string;
   private MainUrl=environment.userUrl;
   private userName!:string;
   private clientSecret!:'325355b7b6b330c465584f935d847237da76b4e3 ';
@@ -19,11 +19,17 @@ export class SearchService {
      +&client_secret=+ ${this.clientSecret}`,{ }).toPromise()
 
   }
-  
+
   getUserName(userNames:string){
     this.userName =userNames;
   }
-  
+  getUserRepositories(){
+    return this.http.get<any[]>(`${this.MainUrl}${this.userName}/repos`).toPromise();
+
+  }
+  updateRepos(repos:string){
+    return this.repoName =repos;
+  }
  
   
 }

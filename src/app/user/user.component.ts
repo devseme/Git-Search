@@ -8,6 +8,7 @@ import { SearchService } from '../services/search.service';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
+   repos!:any;
     myProfile!:any;
     userName:string='';
   constructor( private searchService:SearchService) { 
@@ -19,9 +20,10 @@ export class UserComponent implements OnInit {
     this.myProfile=profile;
   }).catch((err)=>{
     console.log(err)
-  })
-  
-
+  });
+  this.searchService.getUserRepositories().then(repo =>{
+    this.repos =repo;
+  });
   }
 
   ngOnInit(): void {
