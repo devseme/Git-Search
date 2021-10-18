@@ -1,21 +1,19 @@
 <div class="form-class">
     <form>
-    <span appColor>Enter your Username: </span><input type="text"  id="userName" [(ngModel)]="userName" name="userName" (keyup)="searchProfile()" placeholder="Your username..." required>
+    <span appColor>Enter your Username </span><input type="text"  id="userName" [(ngModel)]="userName" name="userName" (keyup)="searchProfile()" placeholder="Your username..." required>
     
 </form>
 <br>
    <div>
-      <p>MyUsername:{{myProfile.login}}</p>
+      <p>MyUsername:
+          <br>{{myProfile.login}}</p>
       <br>
       <img id="image" [src]='myProfile.avatar_url'>
+      <br>
       
       <p>My name:{{myProfile.name}}</p>
+      <br>
       <p>My Followers:{{myProfile.followers}}</p>
 
-      <div *ngFor='let repo of repos'>
- 
-         <h2>{{repo.name}}</h2> 
-         <p>{{repo.description}}</p>
-         </div>
-        </div>
+      
     </div>

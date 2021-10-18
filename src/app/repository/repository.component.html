@@ -1,1 +1,12 @@
-<p>repository works!</p>
+<div class="form-class">
+    <form>
+    <span appColor>Enter your Reponame </span><input type="text"  id="userName" [(ngModel)]="userName" name="userName" (keyup)="getUserRepositories()" placeholder="Your Repo name..." required>
+    
+</form>
+
+<div *ngFor='let repo of repositories'>
+ 
+    <h2>{{repo.name}}</h2> 
+    <p>{{repo.description}}</p>
+    </div>
+   

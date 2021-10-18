@@ -21,9 +21,7 @@ export class UserComponent implements OnInit {
   }).catch((err)=>{
     console.log(err)
   });
-  this.searchService.getUserRepositories().then(repo =>{
-    this.repos =repo;
-  });
+  
   }
 
   ngOnInit(): void {
