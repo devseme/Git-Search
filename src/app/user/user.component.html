@@ -1,19 +1,31 @@
+<h1> Github Users` Data</h1><br>
+
 <div class="form-class">
     <form>
-    <span appColor>Enter your Username </span><input type="text"  id="userName" [(ngModel)]="userName" name="userName" (keyup)="searchProfile()" placeholder="Your username..." required>
-    
+        <label for="userName"> <span appColor>Enter and Search your Github Username </span></label>
+        <hr>
+   <input type="text"  class="form-control"  id="lg" id="userName" [(ngModel)]="userName" name="userName" (keyup)="searchProfile()" placeholder="Your username..." required>
+  
 </form>
 <br>
    <div>
-      <p>MyUsername:
-          <br>{{myProfile.login}}</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+     <!-- <blockquote class="text-center text-lg"> -->
+    <img id="image" [src]='myProfile.avatar_url'>
+        </div>
+        <div class="col-sm-6">
+          <br><br>
+      <p>My Username: {{myProfile.login}}</p>
       <br>
-      <img id="image" [src]='myProfile.avatar_url'>
+      <p>My name: {{myProfile.name}}</p>
       <br>
-      
-      <p>My name:{{myProfile.name}}</p>
+      <p>My Followers: {{myProfile.followers}}</p>
       <br>
-      <p>My Followers:{{myProfile.followers}}</p>
-
-      
+      <p>Following: {{myProfile.following}}</p>
     </div>
+    </div>
+    </div>
+    </div>
+  
