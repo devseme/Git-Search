@@ -1,6 +1,16 @@
-# Search
+# Git-Search App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
+
+
+
+#### This is my IP2 for core module at Moringa school
+#### By **Ian Ochenge**
+## Description
+This is an applicationa website where users enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories.
+## Setup/Installation Requirements
+
+* You can run my deployed project at [Deloyed-page]()
 
 ## Development server
 
