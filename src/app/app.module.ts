@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { FormsModule } from '@angular/forms';
 import { ColorDirective } from './color.directive';
+import { RepositoryComponent } from './repository/repository.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    ColorDirective
+    ColorDirective,
+    RepositoryComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

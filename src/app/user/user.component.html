@@ -1,10 +1,14 @@
-<form>
-    <span appColor>Enter your Username: <input type="text"  id="userName" [(ngModel)]="userName" name="userName" (keyup)="searchProfile()" placeholder="Your username..." required></span>
+<div class="form-class">
+    <form>
+    <span appColor>Enter your Username: </span><input type="text"  id="userName" [(ngModel)]="userName" name="userName" (keyup)="searchProfile()" placeholder="Your username..." required>
     
 </form>
-  
+<br>
+   <div>
       <p>MyUsername:{{myProfile.login}}</p>
-      <img [src]='myProfile.avatar_url'  class="img-responsive profileimage">
+      <br>
+      <img id="image" [src]='myProfile.avatar_url'>
+      
       <p>My name:{{myProfile.name}}</p>
       <p>My Followers:{{myProfile.followers}}</p>
 
@@ -13,3 +17,5 @@
          <h2>{{repo.name}}</h2> 
          <p>{{repo.description}}</p>
          </div>
+        </div>
+    </div>
